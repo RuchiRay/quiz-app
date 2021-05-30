@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="start-rule.css">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="stylesheet" href="result.css">
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/86fb746b51.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- start button -->
+    <div class="start">
+        <button id="start">Start Quiz</button>
+    </div>
+    <!-- rule book -->
+    <div class="ruleBook hideModal " id="ruleBook">
+        <h1 class="rulesHeading">Some rules of this quiz</h1>
+        <div class="rules">
+            <p>1. You will only have <span>15 seconds</span> for each question</p>
+            <p>2. Once you select an answer it cannot be undone</p>
+            <p>3. You cannot select multiple answers</p>
+            <p>4. You cannot exit the quiz while you are playing</p>
+            <p>5. You will get scores on the basis of your answer</p>
+        </div>
+        <div class="continue-exit">
+            <button class="exit" id="exit">Exit Quiz</button>
+            <button class="continue" id="continue">Continue</button>
+        </div>
+    </div>
+    <!-- questions -->
+
+    <div class="main" id="main">
+        <div class="counter">
+            <div class="timer">
+                <div class="time-left">Time left</div>
+                <div id="time"></div>
+            </div>
+
+        </div>
+        <div class="time_line" id="time_line"></div>
+        <div class="question-answer">
+            <div class="question">
+                <h3 id="question">Question Incoming.....</h3>
+            </div>
+            <div class="options-answers">
+                <div class="option" id="option1">option1 </div>
+                <div class="option" id="option2">option2</div>
+                <div class="option" id="option3">option3</div>
+                <div class="option" id="option4">option4</div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="question-footer">
+            <div class="no-of-question" id="no-of-question">1 out of 10 questions</div>
+            <div class="next-question" id="next-question"><button class="next next-hide" id="next">Next Que.</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- result box -->
+    <div id="resultBox">
+        <div class="crown"><i class="fas fa-crown"></i></div>
+        <div class="remarks">
+            <p> You have compeleted the quiz! congrats <i class="far fa-smile-beam smiley"></i></p>
+            <p id="score">you got 5 out of 10</p>
+
+        </div>
+        <div class="replay-quit">
+            <button class="replay" id="replay">Replay</button>
+            <button id="quit" class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

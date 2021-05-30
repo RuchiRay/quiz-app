@@ -1,0 +1,126 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 40%;
+    position: absolute;
+    display: none;
+}
+.counter{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* width: 200px; */
+    text-align: center;
+}
+.timer{
+    background: #c86bfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.time_line{
+    width: 3px;
+    height: 3px;
+    background: #c86bfa;
+}
+
+.question-answer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+.options-answers, .question{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #3d0066;
+}
+.counter{
+    font-weight: 900;
+}
+.options-answers{
+    font-weight:500;
+}
+.question{
+    font-weight: lighter;
+    color: #3d0066;
+}
+.line{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.option{
+    border: 2px solid #3d0066;
+    /* background-color: #c86bfa; */
+    background-color: #e0aaff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    color: #3d0066;
+    /* padding: 5px; */
+}
+.no-of-question{
+ padding-left: 25px;
+ font-weight: 900;
+}
+.next-question{
+    padding-right: 10px;
+}
+.next{
+    background: #3d0066;
+    color: white;
+    margin-right: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.next:hover{
+    background: #510087;
+}
+#time{
+    background: rgba(0, 0, 0, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 5px;
+    color: white;
+}
+.time-left{
+    color: #3d0066;
+    font-weight: 900;
+}
+
+.next-hide{
+    display: none;
+}
+.next-show{
+    display: block;
+}
+

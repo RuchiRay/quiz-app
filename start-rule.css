@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+button{
+  cursor: pointer;
+}
+body{
+    height: 100vh;
+/* background: linear-gradient(to right, #F0CB35, #C02425);  */
+background: #c86bfa;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+/* start button */
+#start{
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    background: #3d0066;
+    border: none;
+    color: white;
+}
+#start:hover{
+  background: #510087;
+}
+/* rulebook */
+.ruleBook{
+    
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* display: none; */
+   
+}
+.rules{
+   
+    padding: 20px;
+    
+}
+.rulesHeading{
+    text-align: center;
+    font-size: 32px;
+   
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.continue-exit{
+    text-align: right;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+.continue-exit button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.exit , .continue{
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+.exit{
+    background: white;
+    color: #3d0066;
+   border: 2px solid #3d0066;
+}
+.exit:hover{
+    background: #3d0066;
+    color: white;
+}
+.continue:hover{
+    background: #510087;
+    /* color: #00296b; */
+   /* border: 2px solid #00296b; */
+}
+.continue{
+    background: #3d0066;
+    color: white;
+    margin-right: 10px;
+   
+}
+span{
+    color: #00296b;
+    font-weight: 900;
+}
+
+
+
+  .hideModal{
+    z-index:-1;
+    opacity:0;
+  animation: hide 0.5s;
+  
+transform: scale(0);
+}@keyframes hide {
+  from{
+      z-index:2;
+transform: scale(1);
+    opacity:1;
+  } to{
+      z-index:-1;
+transform: scale(0);
+    opacity: 0;
+  }
+}
+.showModal{
+  opacity:1;
+    z-index:2;
+  animation: show 0.5s;
+  
+transform: scale(1);
+}
+@keyframes show {
+  from{
+    
+transform: scale(0);
+    opacity:0;
+      z-index:-1;
+  } to{
+    
+transform: scale(1);
+    opacity: 1;
+      z-index:2;
+  }
+}
+
+  

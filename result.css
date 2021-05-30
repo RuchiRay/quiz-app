@@ -1,0 +1,57 @@
+#resultBox{
+    background: white;
+    border: 2px solid #3d0066;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+}
+.crown{
+    color:#3d0066;
+    font-size: 90px;
+
+}
+.remarks{
+    padding: 10px;
+    text-align: center;
+    color: #3d0066;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+.smiley{
+    color: #3d0066;
+    font-size: 20px;
+}
+.quit , .replay{
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.replay{
+    background: white;
+    color: #3d0066;
+   border: 2px solid #3d0066;
+}
+.replay:hover{
+    background: #3d0066;
+    color: white;
+}
+.quit:hover{
+    background: #510087;
+}
+.quit{
+    background: #3d0066;
+    color: white;
+    margin-right: 10px;
+   
+}
